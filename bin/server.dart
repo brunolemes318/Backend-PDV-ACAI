@@ -26,9 +26,13 @@ FunctionTarget? _nameToFunctionTarget(String name) {
       return FunctionTarget.http(
         function_library.function,
       );
-    case 'produtos':
+    case 'product':
       return FunctionTarget.http(
-        function_library.produtos,
+        function_library.product,
+      );
+    case 'user':
+      return FunctionTarget.http(
+        function_library.user,
       );
     default:
       return null;
