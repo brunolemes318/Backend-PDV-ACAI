@@ -9,6 +9,7 @@ environment:
 
 dependencies:
   functions_framework: ^0.4.0
+  postgrest: ^0.1.8
   shelf: ^1.0.0
 
 dev_dependencies:
