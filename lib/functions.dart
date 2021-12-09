@@ -9,12 +9,17 @@ Response function(Request request) {
 
 @CloudFunction()
 Response product(Request request) {
-  return Response.ok('Rota Principal');
+  return Response.ok('products');
 }
 
 @CloudFunction()
 Response user(Request request) {
-  return Response.ok('Rota Principal');
+  return Response.ok('users');
+}
+
+@CloudFunction()
+Response weather(Request request) {
+  return Response.ok('weather');
 }
 
 
