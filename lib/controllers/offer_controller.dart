@@ -1,13 +1,13 @@
-import 'package:back/models/user_product.dart';
+import 'package:back/models/product_model.dart';
 
 class OfferController {
   late List<UserProduct> product;
-  late double off, minimumquantity
-;
+  late double off, minimumquantity;
 
-  OfferController({this.product = const [], off = 0.0, this.minimumquantity = 0.0});
+  OfferController(
+      {this.product = const [], off = 0.0, this.minimumquantity = 0.0});
 
-  set setMinimumQuantity({double minimumquantity = 0.00}){
+  setMinimumQuantity({double minimumquantity = 0.00}) {
     this.minimumquantity = minimumquantity;
   }
 
