@@ -1,12 +1,12 @@
 import 'package:postgrest/postgrest.dart';
 
 class UserModel {
-  late String name, user, password;
+  late String name, user, password, location;
 
   UserModel(
       {this.name = "desconhecido",
       this.user = "usuário novo",
-      this.password = "123456"});
+      this.password = "123456", required this.location});
 
   /*
   Métodos referentes aos atributos do model

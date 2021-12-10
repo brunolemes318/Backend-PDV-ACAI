@@ -5,10 +5,5 @@ import 'package:uno/uno.dart';
 class Weather_Controller {
   Uno getData = Uno();
 
-  Future<void> getWeatherNow() async {
-    final response = await getData.get('url');
-    response.data;
-  }
-
   changeStateDay(Day_Model day) {}
 }
