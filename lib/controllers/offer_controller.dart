@@ -1,7 +1,7 @@
 import 'package:back/models/product_model.dart';
 
 class OfferController {
-  late List<UserProduct> product;
+  late List<Product_Model> product;
   late double off, minimumquantity;
 
   OfferController(

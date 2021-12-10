@@ -1,12 +1,19 @@
+import 'package:date_format/date_format.dart';
 import 'package:uno/uno.dart';
 
-class WeatherModel {
-  Uno getData = Uno();
+class Day_Model {
+  String day;
+  String stateDay;
 
-  WeatherModel();
+  Day_Model({this.day = '00-00-00 00:00', required this.stateDay});
 
-  Future<void> getWeatherNow() async {
-    final response = await getData.get('url');
-    response.data;
+  insertDayNow() {
+    day = formatDate(DateTime.now(), [yyyy, '-', mm, '-', dd]);
+  }
+
+  get getDayNow => day;
+
+  set setDay(String day) {
+    this.day = day;
   }
 }

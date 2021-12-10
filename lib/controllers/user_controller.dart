@@ -63,11 +63,10 @@ class UserModel {
 
   /* Método set para capturar o caminho da foto */
 
-  set SetimageUser(Object image) {
+  set setimageUser(Object image) {
     this.picture = image;
   }
 
-  
   /* Método get para capturar o caminho da foto */
   get getImageUser => picture;
 }

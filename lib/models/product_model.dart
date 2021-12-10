@@ -1,5 +1,5 @@
-class UserProduct {
+class Product_Model {
   String name;
   double price;
-  UserProduct({required this.name, this.price = 0.0});
+  Product_Model({required this.name, this.price = 0.0});
 }
